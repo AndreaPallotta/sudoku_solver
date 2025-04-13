@@ -38,6 +38,11 @@ Run the solver with:
 python main.py -i <path_to_input> [--file] [-t TIMEOUT]
 ```
 
+Run the UI with:
+```bash
+streamlit run ui.py
+```
+
 ### Arguments:
 
 - `-i` or `--input`: Path to the input Sudoku file or image.

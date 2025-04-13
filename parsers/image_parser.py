@@ -100,9 +100,3 @@ def parse_image(image_path):
     if len(grid) != 9 or any(len(row) != 9 for row in grid):
         raise ValueError("Parsed grid is not 9x9.")
     return np.array(grid)
-
-if __name__ == "__main__":
-    image_path = "/desktop/projects/sudoku_solver/data/sudoku.png"
-    os.environ['TESSDATA_PREFIX'] = '/usr/share/tesseract-ocr/5'
-    grid = parse_image(image_path)
-    print(grid)

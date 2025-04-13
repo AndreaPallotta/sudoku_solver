@@ -78,9 +78,7 @@ def timed(label):
     Decorator to time the execution of a function.
     Args:
         label (str): Label for the timed function.
-    Returns:
-        function: Decorated function that prints the execution time.
-    """
+    Returns:"""
     def decorator(func):
         def wrapper(*args, **kwargs):
             start = time.perf_counter()

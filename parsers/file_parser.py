@@ -25,8 +25,3 @@ def parse_file(file_path):
                 grid.append([int(num) if num.isdigit() else 0 for num in line])
 
     return np.array(grid)
-
-if __name__ == "__main__":
-    file_path = "/desktop/projects/sudoku_solver/data/grid.sdku"
-    grid = parse_file(file_path)
-    print(grid)
